@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload"
+    android:orientation="vertical"
+    android:background="#6AAe43">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background_bot_radius">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/groot_logo_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Select a type of Image"
+            android:gravity="center"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:id="@+id/btn_tree"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:text="Tree"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_pest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:text="Pest"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_disease"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:text="Disease"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/border_radius_bot">
+
+            <ImageButton
+                android:id="@+id/btn_mini_capture"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_69"
+                app:tint="#808080" />
+
+            <ImageButton
+                android:id="@+id/btn_mini_lib"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_70"
+                app:tint="#808080" />
+
+            <ImageButton
+                android:id="@+id/btn_mini_upload"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_71"
+                app:tint="#fff" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/group_72"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="30dp"
+                app:tint="#808080"
+                android:id="@+id/btn_mini_report"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

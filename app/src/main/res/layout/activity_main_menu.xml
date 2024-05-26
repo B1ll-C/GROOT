@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/groot_logo_1"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help us gather valuable data!\nCapture and share images to\ncontribute to our project's\nsuccess"
+        android:textColor="#000"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_radius_bot"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/group_69"
+            android:text="Capture using camera"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="left|center"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:id="@+id/btn_capture"
+            android:onClick="btn_capture_pressed"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/group_70"
+            android:text="Browse library"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="left|center"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:id="@+id/btn_library"
+            android:onClick="btn_library_pressed"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/group_71"
+            android:text="Upload from gallery"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="left|center"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:id="@+id/btn_upload"
+            android:onClick="btn_upload_pressed"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/group_72"
+            android:text="Make report"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="left|center"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:id="@+id/btn_report"
+            android:onClick="btn_report_pressed"/>
+    </LinearLayout>
+</LinearLayout>
