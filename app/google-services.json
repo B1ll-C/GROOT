@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710864104021",
+    "project_id": "groot-18cdf",
+    "storage_bucket": "groot-18cdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710864104021:android:f84f816b38bb2b1fb702dc",
+        "android_client_info": {
+          "package_name": "com.example.groot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv9s_JJ6EaXeZHkbC1c0aTWfQVPUhrP6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

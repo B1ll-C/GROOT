@@ -20,35 +20,28 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="30dp" android:layout_marginBottom="50dp">
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pests" android:textStyle="bold"/>
             <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/hsv_pest">
+
+
+                 </LinearLayout>
             </HorizontalScrollView>
         </LinearLayout>
         <!-- Diseases -->
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="30dp">
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Diseases" android:textStyle="bold"/>
             <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
-                    <ImageButton android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/tree_svgrepo_com" android:scaleType="fitCenter" android:layout_marginEnd="30dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/hsv_disease">
+
                 </LinearLayout>
             </HorizontalScrollView>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center|bottom">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/border_radius_bot">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/border_radius_bot" >
             <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/group_69" android:background="?android:attr/selectableItemBackground" android:layout_marginEnd="30dp" app:tint="#808080" android:id="@+id/btn_mini_capture"/>
             <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/group_70" android:background="?android:attr/selectableItemBackground" android:layout_marginEnd="30dp" app:tint="#fff" android:id="@+id/btn_mini_lib"/>
             <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/group_71" android:background="?android:attr/selectableItemBackground" android:layout_marginEnd="30dp" app:tint="#808080" android:id="@+id/btn_mini_upload"/>
-            <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/group_72" android:background="?android:attr/selectableItemBackground" android:layout_marginEnd="30dp" app:tint="#808080" android:id="@+id/btn_mini_report"/>
+            <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/group_72" android:background="?android:attr/selectableItemBackground" android:layout_marginEnd="30dp" app:tint="#808080" android:id="@+id/btn_mini_report" android:visibility="gone"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload"
+    android:orientation="vertical"
+    android:background="#6AAe43">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background_bot_radius">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/groot_logo_1" />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/tree_svgrepo_com"
+            android:id="@+id/img_prev"
+            android:layout_marginBottom="30dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Tree:"
+            android:id="@+id/tbx_tree"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_select"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_submit"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/border_radius_bot">
+
+            <ImageButton
+                android:id="@+id/btn_mini_capture"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_69"
+                app:tint="#808080" />
+
+            <ImageButton
+                android:id="@+id/btn_mini_lib"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_70"
+                app:tint="#808080" />
+
+            <ImageButton
+                android:id="@+id/btn_mini_upload"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/group_71"
+                app:tint="#fff" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/group_72"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="30dp"
+                app:tint="#808080"
+                android:id="@+id/btn_mini_report"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

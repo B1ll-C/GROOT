@@ -13,6 +13,21 @@
         android:theme="@style/Theme.GROOT"
         tools:targetApi="31">
         <activity
+            android:name=".DiseaseInfo"
+            android:exported="false" />
+        <activity
+            android:name=".PestInfo"
+            android:exported="false" />
+        <activity
+            android:name=".UploadDisease"
+            android:exported="false" />
+        <activity
+            android:name=".UploadPest"
+            android:exported="false" />
+        <activity
+            android:name=".UploadTrees"
+            android:exported="false" />
+        <activity
             android:name=".TreesInfo"
             android:exported="false" />
         <activity

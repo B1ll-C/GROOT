@@ -3,6 +3,7 @@ package com.example.groot;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,6 +52,9 @@ public class TreesInfo extends AppCompatActivity implements View.OnClickListener
         txt_care = findViewById(R.id.txt_care);
         txt_pests = findViewById(R.id.txt_pests);
 
+        img_tree = findViewById(R.id.img_tree);
+
+
 
         ImageButton btn_mini_capture = findViewById(R.id.btn_mini_capture);
         ImageButton btn_mini_upload = findViewById(R.id.btn_mini_upload);
@@ -87,6 +91,7 @@ public class TreesInfo extends AppCompatActivity implements View.OnClickListener
                    String physicalCharacteristics = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.Physical_Characteristics));
                    String care = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.Care));
                    String pests = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.Pests));
+                   String image = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.Images));
 
                    txt_common_name.setText(commonName);
                    txt_scientific_name.setText(scientificName);
@@ -97,8 +102,16 @@ public class TreesInfo extends AppCompatActivity implements View.OnClickListener
                    txt_care.setText(care);
                    txt_pests.setText(pests);
 
+                   int xxxx = Integer.parseInt(image);
+
+
+                   Uri path = Uri.parse("android.resource://com.example.groot/" + xxxx);
+//                   img_tree.setImageDrawable(path);
+                   img_tree.setImageURI(path);
+
 ////
-//                   Log.i("TREE_INFO", commonName);
+
+                   Log.i("TREE_INFO", image);
                }while (cursor.moveToNext());
            }
 
