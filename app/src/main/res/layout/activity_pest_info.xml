@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PestInfo"
+    android:orientation="vertical"
+    android:background="@color/palette_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background_bot_radius">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/group_72"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/img_pest" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Common Name:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Common Name:"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_common_name"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scientific Name:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scientific Name"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_scientific_name"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Family"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="family"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_family"
+                    android:textColor="#000"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_description"
+                android:textColor="#000"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Host Range:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Host Range"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_host_range"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damage:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damage:"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_damage"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Management Practice:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Management:"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_mangement"
+                    android:textColor="#000"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/border_radius_bot">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/group_69"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="30dp"
+            app:tint="#808080"
+            android:id="@+id/btn_mini_capture"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/group_70"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="30dp"
+            app:tint="#fff"
+            android:id="@+id/btn_mini_lib" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/group_71"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="30dp"
+            app:tint="#808080"
+            android:id="@+id/btn_mini_upload" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/group_72"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="30dp"
+            app:tint="#808080"
+            android:id="@+id/btn_mini_report"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

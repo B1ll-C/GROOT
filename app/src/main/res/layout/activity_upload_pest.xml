@@ -18,50 +18,42 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/groot_logo_1" />
 
-        <TextView
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/bug_svgrepo_com"
+            android:id="@+id/img_prev"
+            android:layout_marginBottom="30dp"
+            />
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:text="Select a type of Image"
-            android:gravity="center"
-            android:layout_marginTop="50dp" />
+            android:hint="Name of Pest:"
+            android:id="@+id/tbx_pest"/>
 
         <Button
-            android:id="@+id/btn_tree"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:text="SELECT"
             android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:text="Tree"
-            android:textColor="#000"
-            android:textStyle="bold" />
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_select"/>
 
         <Button
-            android:id="@+id/btn_pest"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:text="Submit"
             android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:text="Pest"
-            android:textColor="#000"
-            android:textStyle="bold" />
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_submit"/>
 
-        <Button
-            android:id="@+id/btn_disease"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corner"
-            android:text="Disease"
-            android:textColor="#000"
-            android:textStyle="bold" />
+
 
     </LinearLayout>
 

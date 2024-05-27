@@ -31,6 +31,8 @@
             android:layout_marginRight="30dp"
             android:id="@+id/img_capture" />
 
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,16 +42,18 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="50dp"
-            android:id="@+id/btn_predict" />
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btn_capture"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:text="Capture"
+            android:text="Predict"
             android:backgroundTint="#6AAE43"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:id="@+id/btn_predict" />
 
         <TextView
             android:layout_width="match_parent"
@@ -99,6 +103,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:layout_marginEnd="30dp"
             app:tint="#808080"
-            android:id="@+id/btn_mini_report" />
+            android:id="@+id/btn_mini_report"
+            android:visibility="gone"/>
     </LinearLayout>
 </LinearLayout>
