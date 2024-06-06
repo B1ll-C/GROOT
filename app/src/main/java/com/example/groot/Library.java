@@ -100,8 +100,8 @@ public class Library extends AppCompatActivity implements View.OnClickListener {
 
                 ImageButton imageButton = new ImageButton(this);
                 imageButton.setLayoutParams(new LinearLayout.LayoutParams(
-                350, // width
-                350)); // height
+                300, // width
+                300)); // height
                 //                    imageButton.setImageResource(R.drawable.tree_svgrepo_com);
                 int xxxx = Integer.parseInt(Images);
                 Uri path = Uri.parse("android.resource://com.example.groot/" + xxxx);
@@ -183,8 +183,8 @@ public class Library extends AppCompatActivity implements View.OnClickListener {
 
                 ImageButton imageButton = new ImageButton(this);
                 imageButton.setLayoutParams(new LinearLayout.LayoutParams(
-                        350, // width
-                        350)); // height
+                        300, // width
+                        300)); // height
                 //                    imageButton.setImageResource(R.drawable.tree_svgrepo_com);
                 int xxxx = Integer.parseInt(Images);
                 Uri path = Uri.parse("android.resource://com.example.groot/" + xxxx);
@@ -263,8 +263,8 @@ public class Library extends AppCompatActivity implements View.OnClickListener {
 
                 ImageButton imageButton = new ImageButton(this);
                 imageButton.setLayoutParams(new LinearLayout.LayoutParams(
-                        350, // width
-                        350)); // height
+                        300, // width
+                        300)); // height
                 //                    imageButton.setImageResource(R.drawable.tree_svgrepo_com);
                 int xxxx = Integer.parseInt(Images);
                 Uri path = Uri.parse("android.resource://com.example.groot/" + xxxx);
